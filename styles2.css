@@ -5,6 +5,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #373635;
+  color: #57871d;
 }
 
 .grid-container {
@@ -17,8 +19,8 @@ body {
 }
 
 .grid-item {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #4b4a49;
+  border: 1px solid #5f5e5d;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -31,9 +33,20 @@ body {
 .grid-item:hover {
   background-color: #e0e0e0;
 }
-
+.quadrado {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.retangulo {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.noticias {
+  grid-column: span 6;
+}
 .search-bar {
   grid-column: span 6;
+  /* grid-row: span 2; */
   padding: 10px;
 }
 
