@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página Inicial</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Exemplo de um grid para barra de pesquisa -->
+      <div class="grid-item search-bar">
+        <input type="text" placeholder="Pesquisar na web..." id="searchInput" />
+      </div>
+      <!-- Outros grids -->
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.google.com'"
+      >
+        Google
+      </div>
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.gmail.com'"
+      >
+        Gmail
+      </div>
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.youtube.com'"
+      >
+        YouTube
+      </div>
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.facebook.com'"
+      >
+        Facebook
+      </div>
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.twitter.com'"
+      >
+        Twitter
+      </div>
+      <div
+        class="grid-item"
+        onclick="window.location.href='https://www.linkedin.com'"
+      >
+        LinkedIn
+      </div>
+      <!-- Adicione mais grids conforme necessário -->
+    </div>
+
+    <script>
+      document.getElementById('searchInput').addEventListener('keypress', function (e) {
+          if (e.key === 'Enter') {
+              const query = e.target.value;
+              window.location.href = `https://www.google.com/search?q=${query}`;
+          }
+      });
+    </script>
+  </body>
+</html>
